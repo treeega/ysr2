@@ -1,0 +1,23 @@
+﻿<Page x:Class="Lab.Pages.AddUser"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Lab.Pages"
+      mc:Ignorable="d" 
+      Title="AddUser" Height="300" Width="300" ScrollViewer.VerticalScrollBarVisibility="Auto">
+
+
+    <Grid Margin="10,3,10,23">
+        <TextBox HorizontalAlignment="Stretch" Margin="0,37,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="266" Name="Lbox" TextChanged="Lbox_TextChanged"/>
+        <TextBox Margin="7,84,7,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="266" Name="Pbox"/>
+        <TextBox Margin="4,132,10,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="266" Name="PTbox"/>
+        <ComboBox HorizontalAlignment="Stretch" Margin="0,171,0,0" VerticalAlignment="Top"  Width="266" Height="36" SelectedIndex="0" Name="Cbox">
+            <ComboBoxItem Content="User"/>
+            <ComboBoxItem Content="Admin"/>
+        </ComboBox>
+        <Button Content="Save" HorizontalAlignment="Center"  Name="SaveB" Margin="0,237,0,0" VerticalAlignment="Top" Height="35" Width="168" Click="ButtonSave"/>
+        <Label  HorizontalAlignment="Left" Margin="30,10,0,0" VerticalAlignment="Top" Name="Lablegood" Content="Good" Foreground="#FF00FF1B"/>
+        <Label  HorizontalAlignment="Left" Margin="30,10,0,0" VerticalAlignment="Top" Name="Lablenotgood" Content="Not good" Foreground="Red"/>
+    </Grid>
+</Page>

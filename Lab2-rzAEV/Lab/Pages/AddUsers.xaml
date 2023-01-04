@@ -1,0 +1,21 @@
+﻿<Page x:Class="Lab.Page.AddUser"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Lab.Page"
+      mc:Ignorable="d" 
+      Title="AddUser" Height="300" Width="300" ScrollViewer.VerticalScrollBarVisibility="Auto">
+
+    <Grid Height="300" Width="300">
+        <TextBox HorizontalAlignment="Center" Margin="0,37,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="266"/>
+        <TextBox HorizontalAlignment="Center" Margin="0,104,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="266"/>
+        <ComboBox HorizontalAlignment="Center" Margin="0,171,0,0" VerticalAlignment="Top"  Width="266" Height="36" SelectedIndex="0">
+            <ComboBoxItem Content="User"/>
+            <ComboBoxItem Content="Admin"/>
+        </ComboBox>
+        <Button Content="Save" HorizontalAlignment="Center" Margin="0,237,0,0" VerticalAlignment="Top" Height="35" Width="168"/>
+
+
+    </Grid>
+</Page>
